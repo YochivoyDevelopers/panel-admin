@@ -282,14 +282,14 @@ export class RestdetailsComponent implements OnInit {
     const geocoder = new google.maps.Geocoder;
     geocoder.geocode({ address: this.address }, (results, status) => {
       console.log(results, status);
-      if (status === 'OK' && results && results.length) {
+    //  if (status === 'OK' && results && results.length) {
         this.latitude = results[0].geometry.location.lat();
         this.longitude = results[0].geometry.location.lng();
         console.log(`Coordenadas del restaurante: [${this.latitude}, ${this.longitude}]`);
-      } else {
-        alert('Geocode was not successful for the following reason: ' + status);
-        return false;
-      }
+    //  } else {
+       // alert('Geocode was not successful for the following reason: ' + status);
+       // return false;
+    //  }
     });
 
     if (!this.coverImage || this.coverImage === '') {
@@ -367,14 +367,14 @@ export class RestdetailsComponent implements OnInit {
     const geocoder = new google.maps.Geocoder;
     geocoder.geocode({ address: this.address }, (results, status) => {
       console.log(results, status);
-      if (status === 'OK' && results && results.length) {
+    //  if (status === 'OK' && results && results.length) {
         this.latitude = results[0].geometry.location.lat();
         this.longitude = results[0].geometry.location.lng();
         console.log(`Coordenadas del restaurante: [${this.latitude}, ${this.longitude}]`);
-      } else {
-        alert('Geocode was not successful for the following reason: ' + status);
-        return false;
-      }
+     // } else {
+      //  alert('Geocode was not successful for the following reason: ' + status);
+      //  return false;
+    //  }
     });
 
     const emailfilter = /^[\w._-]+[+]?[\w._-]+@[\w.-]+\.[a-zA-Z]{2,6}$/;

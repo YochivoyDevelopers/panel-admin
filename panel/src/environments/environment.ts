@@ -5,13 +5,14 @@
 export const environment = {
 	production: false,
 	firebase: {
-		apiKey: "AIzaSyCLPksfOS3tOAZbciMf8zV9vtqa6ehbPuk",
-		authDomain: "fiesta-e5249.firebaseapp.com",
-		projectId: "fiesta-e5249",
-		storageBucket: "fiesta-e5249.appspot.com",
-		messagingSenderId: "177342940634",
-		appId: "1:177342940634:web:79e45d75f22f3df9ccace3",
-		measurementId: "G-0FZ96EJTEN"
+		apiKey: "AIzaSyAUMKgQAni5x9uCEJvlOxmn3vIDAbSDkc8",
+		authDomain: "yochi-panel.firebaseapp.com",
+		databaseURL: "https://yochi-panel-default-rtdb.firebaseio.com",
+		projectId: "yochi-panel",
+		storageBucket: "yochi-panel.appspot.com",
+		messagingSenderId: "1032860825891",
+		appId: "1:1032860825891:web:ab09751b7597b98b68f496",
+		measurementId: "G-TS1LP1BF3H"
 	},
 	onesignal: {
 		appId: "63a1d142-32ef-45ef-acf7-7488bf80f157",

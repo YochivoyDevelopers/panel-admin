@@ -3,38 +3,46 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Admin 2fiesta</title>
+	<title>Panel de Control del Sistema Delivery Yochi-voy</title>
 
 	<base href="/" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="icon" type="image/x-icon" href="assets/icon.png" />
 
 	<link href="https://fonts.googleapis.com/css?family=Mada:300,400,500,600,700" rel="stylesheet" />
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlNBw34hj-dPxX9Ebi0VWkkAfN10EIs74&amp;libraries=places&amp;language=en"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDlNBw34hj-dPxX9Ebi0VWkkAfN10EIs74&libraries=places"></script>
+		
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
 
 	<!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 	<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+	 
+	<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+ 
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAUMKgQAni5x9uCEJvlOxmn3vIDAbSDkc8",
+    authDomain: "yochi-panel.firebaseapp.com",
+    databaseURL: "https://yochi-panel-default-rtdb.firebaseio.com",
+    projectId: "yochi-panel",
+    storageBucket: "yochi-panel.appspot.com",
+    messagingSenderId: "1032860825891",
+    appId: "1:1032860825891:web:ab09751b7597b98b68f496",
+    measurementId: "G-TS1LP1BF3H"
+  };
 
-	<script>
-		// Your web app's Firebase configuration
-		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-		var firebaseConfig = {
-			apiKey: "AIzaSyCLPksfOS3tOAZbciMf8zV9vtqa6ehbPuk",
-			authDomain: "fiesta-e5249.firebaseapp.com",
-			projectId: "fiesta-e5249",
-			storageBucket: "fiesta-e5249.appspot.com",
-			messagingSenderId: "177342940634",
-			appId: "1:177342940634:web:b6ec9a9dd78eaf8cccace3",
-			measurementId: "G-W1M0DZKDHV"
-		};
-		// Initialize Firebase
-		firebase.initializeApp(firebaseConfig);
-		firebase.analytics();
-	</script>
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 	<link rel="manifest" href="manifest.webmanifest" />
 	<meta name="theme-color" content="#ff384c" />
 </head>
